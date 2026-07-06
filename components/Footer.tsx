@@ -1,7 +1,7 @@
 const FOOTER_LINKS = [
   { href: "#", label: "Privacy Policy" },
   { href: "#", label: "Terms of Service" },
-  { href: "#", label: "Instagram" },
+  { href: "https://www.instagram.com/youthcreatifers/", label: "Instagram" },
 ];
 
 export default function Footer() {
