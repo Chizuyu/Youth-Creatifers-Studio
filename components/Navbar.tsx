@@ -60,9 +60,9 @@ export default function Navbar() {
           ))}
         </div>
 
-        <button onClick={() => handleButtonClick("#contact")} className="bg-primary text-white text-[13px] font-semibold px-6 py-2 rounded-full hover:bg-[#0077ED] transition-all transform active:scale-95">
+        {/* <button onClick={() => handleButtonClick("#contact")} className="bg-primary text-white text-[13px] font-semibold px-6 py-2 rounded-full hover:bg-[#0077ED] transition-all transform active:scale-95">
           Hire Us
-        </button>
+        </button> */}
       </div>
     </nav>
   );
