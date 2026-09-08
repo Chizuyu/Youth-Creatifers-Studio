@@ -11,11 +11,43 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "-50% 0px -50% 0px",
+      threshold: 0,
+    };
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(`#${entry.target.id}`);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    const heroElement = document.querySelector("#hero");
+    if (heroElement) observer.observe(heroElement);
+
+    NAV_LINKS.forEach((link) => {
+      const element = document.querySelector(link.href);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   const handleNavClick = (
@@ -42,7 +74,9 @@ export default function Navbar() {
         <a
           href="#hero"
           onClick={(e) => handleNavClick(e, "#hero")}
-          className="font-primary-heading text-on-background font-bold tracking-tight cursor-pointer hover:opacity-80 transition-opacity"
+          className={`font-primary-heading font-bold tracking-tight cursor-pointer transition-opacity ${
+            isScrolled ? "text-on-background" : "text-on-background"
+          } hover:opacity-80`}
         >
           Youth Creatifers Studio
         </a>
@@ -53,7 +87,11 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-[14px] font-medium text-on-surface-variant hover:text-primary transition-colors duration-200"
+              className={`text-[14px] font-medium transition-all duration-300 border-b-2 pb-1 ${
+                activeSection === link.href
+                  ? "text-primary border-primary"
+                  : "text-on-surface-variant border-transparent hover:text-primary"
+              }`}
             >
               {link.label}
             </a>
