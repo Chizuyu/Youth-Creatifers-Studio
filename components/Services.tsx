@@ -58,9 +58,6 @@ export default function Services() {
               organizations and high-impact events.
             </p>
           </div>
-          <div className="text-primary font-semibold border-b-2 border-primary pb-1 hidden md:block">
-            Expertise in Execution
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-surface-variant">

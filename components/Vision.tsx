@@ -31,15 +31,13 @@ export default function Vision() {
           <div className="relative">
             <div className="relative aspect-square bg-surface-variant overflow-hidden border border-surface-variant">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiU_zxIqFiqrV1jtg_4Trnrj_ono6vKKIkaXS1PJKxaXcpKcHoltbXIUyMz8jsCD1dpznxjBwQJZMhlkIeye9iN_YO4Puua2ds0OPKxaN1QSFEZ0HyD4sILclfZpfYtNz4r6j7eH9QbY4NMvoIy0a2BASm3h1NGbOzEGcNkmEHLGq4m9uFB-6RapUHamBwXbww08aGyzVX8fmSj4SVW7rWCf-pW9rLlSIRPDI9yHnM9rAdP8fgocqRi_oP7OZQkhUtx_bVBDgbFHo"
+                src="/ycs.jpeg"
                 alt="A macro close-up of a high-resolution camera lens and a digital screen showing lines of clean code, symbolizing the intersection of creative documentation and digital solutions. Cold, clinical blue and sharp white lighting emphasize a high-tech, precision-oriented production environment."
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
-            {/* Absolute floating accent */}
-            <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/5 border border-primary/20 hidden md:block" />
           </div>
         </div>
       </div>
