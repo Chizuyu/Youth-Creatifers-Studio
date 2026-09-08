@@ -65,7 +65,7 @@ export default function Contact() {
             <h2 className="font-hero text-hero-mobile md:text-hero mb-4">
               Start a Conversation
             </h2>
-            <p className="text-on-surface-variant">
+            <p className="font-body text-body text-on-surface-variant">
               Tell us about your next big project. Let&apos;s create
               something exceptional.
             </p>
@@ -74,7 +74,7 @@ export default function Contact() {
           <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
             {/* Input Nama */}
             <div className="col-span-1">
-              <label htmlFor="name" className="block text-[12px] font-bold uppercase tracking-wider text-on-surface mb-2">
+              <label htmlFor="name" className="block font-label text-label uppercase text-on-surface mb-2">
                 Full Name
               </label>
               <input
@@ -91,7 +91,7 @@ export default function Contact() {
 
             {/* Input Email */}
             <div className="col-span-1">
-              <label htmlFor="email" className="block text-[12px] font-bold uppercase tracking-wider text-on-surface mb-2">
+              <label htmlFor="email" className="block font-label text-label uppercase text-on-surface mb-2">
                 Email Address
               </label>
               <input
@@ -108,7 +108,7 @@ export default function Contact() {
 
             {/* Select Scope */}
             <div className="col-span-1 md:col-span-2">
-              <label htmlFor="scope" className="block text-[12px] font-bold uppercase tracking-wider text-on-surface mb-2">
+              <label htmlFor="scope" className="block font-label text-label uppercase text-on-surface mb-2">
                 Project Scope
               </label>
               <select
@@ -128,7 +128,7 @@ export default function Contact() {
 
             {/* Textarea Message */}
             <div className="col-span-1 md:col-span-2">
-              <label htmlFor="message" className="block text-[12px] font-bold uppercase tracking-wider text-on-surface mb-2">
+              <label htmlFor="message" className="block font-label text-label uppercase text-on-surface mb-2">
                 Message
               </label>
               <textarea

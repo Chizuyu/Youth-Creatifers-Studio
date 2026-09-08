@@ -82,6 +82,8 @@ const config: Config = {
         hero: ["Inter", "sans-serif"],
         body: ["Inter", "sans-serif"],
         "primary-heading": ["Inter", "sans-serif"],
+        small: ["Inter", "sans-serif"],
+        label: ["Inter", "sans-serif"],
       },
       fontSize: {
         "hero-mobile": ["32px", { lineHeight: "1.2", fontWeight: "600" }],
@@ -96,6 +98,11 @@ const config: Config = {
         ],
         body: ["17px", { lineHeight: "1.5", fontWeight: "400" }],
         "primary-heading": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+        small: ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+        label: [
+          "12px",
+          { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "700" },
+        ],
       },
     },
   },

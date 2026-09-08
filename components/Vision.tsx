@@ -6,9 +6,6 @@ export default function Vision() {
       <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
-            <span className="font-eyebrow text-primary uppercase mb-6 block">
-              Our Vision
-            </span>
             <h2 className="font-hero text-hero-mobile md:text-hero mb-8">
               Seamless execution and professional creative results.
             </h2>

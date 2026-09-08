@@ -67,7 +67,7 @@ export default function Spotlight() {
           <h2 className="font-primary-heading text-primary-heading mb-4">
             Uncompromising Quality
           </h2>
-          <p className="text-on-surface-variant leading-relaxed">
+          <p className="font-body text-body text-on-surface-variant">
             We believe that quality is not only reflected in a visually appealing final result, but also in every step of the process behind it. By combining technical precision with creative intuition, we create digital experiences that are modern, meaningful, and designed to leave a lasting impression on every audience.
           </p>
         </div>

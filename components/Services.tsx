@@ -50,10 +50,10 @@ export default function Services() {
       <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="font-hero text-[32px] md:text-[40px] mb-4">
+            <h2 className="font-hero text-hero-mobile md:text-hero mb-4">
               Core Competencies
             </h2>
-            <p className="text-on-surface-variant text-body">
+            <p className="font-body text-body text-on-surface-variant">
               Specialized solutions tailored to the specific needs of modern
               organizations and high-impact events.
             </p>
@@ -74,7 +74,7 @@ export default function Services() {
               <h3 className="font-primary-heading text-primary-heading mb-4">
                 {service.title}
               </h3>
-              <ul className="space-y-3 text-[14px] text-on-surface-variant">
+              <ul className="space-y-3 font-small text-small text-on-surface-variant">
                 {service.items.map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <span className="w-1 h-1 bg-primary rounded-full mt-2" />
